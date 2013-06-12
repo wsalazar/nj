@@ -1,0 +1,4 @@
+[23-Apr-2013 15:28:25 America/Denver] PHP Fatal error:  Call to undefined function add_filter() in /home7/njpcgeek/public_html/nj/wp-content/plugins/wp-e-commerce/wpsc-core/js/tinymce3/tinymce.php on line 49
+[23-Apr-2013 18:03:19 America/Denver] PHP Fatal error:  Call to undefined function get_terms() in /home7/njpcgeek/public_html/nj/wp-content/plugins/wp-e-commerce/wpsc-core/js/tinymce3/window.php on line 3
+[23-Apr-2013 21:26:21 America/Denver] PHP Fatal error:  Call to undefined function add_filter() in /home7/njpcgeek/public_html/nj/wp-content/plugins/wp-e-commerce/wpsc-core/js/tinymce3/tinymce.php on line 49
+[24-Apr-2013 00:07:22 America/Denver] PHP Fatal error:  Call to undefined function get_terms() in /home7/njpcgeek/public_html/nj/wp-content/plugins/wp-e-commerce/wpsc-core/js/tinymce3/window.php on line 3

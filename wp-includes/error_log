@@ -1,0 +1,6 @@
+[23-Apr-2013 21:09:42 America/Denver] PHP Notice:  Use of undefined constant ABSPATH - assumed 'ABSPATH' in /home7/njpcgeek/public_html/nj/wp-includes/functions.php on line 8
+[23-Apr-2013 21:09:42 America/Denver] PHP Notice:  Use of undefined constant WPINC - assumed 'WPINC' in /home7/njpcgeek/public_html/nj/wp-includes/functions.php on line 8
+[23-Apr-2013 21:09:42 America/Denver] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/option.php' (include_path='.:/usr/php/53/usr/lib64:/usr/php/53/usr/share/pear') in /home7/njpcgeek/public_html/nj/wp-includes/functions.php on line 8
+[23-Apr-2013 21:10:11 America/Denver] PHP Notice:  Use of undefined constant ABSPATH - assumed 'ABSPATH' in /home7/njpcgeek/public_html/nj/wp-includes/functions.php on line 8
+[23-Apr-2013 21:10:11 America/Denver] PHP Notice:  Use of undefined constant WPINC - assumed 'WPINC' in /home7/njpcgeek/public_html/nj/wp-includes/functions.php on line 8
+[23-Apr-2013 21:10:11 America/Denver] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/option.php' (include_path='.:/usr/php/53/usr/lib64:/usr/php/53/usr/share/pear') in /home7/njpcgeek/public_html/nj/wp-includes/functions.php on line 8

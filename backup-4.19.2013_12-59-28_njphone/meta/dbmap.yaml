@@ -1,0 +1,22 @@
+--- 
+MYSQL: 
+  dbs: 
+    njphone_wrdp1: 206.225.83.161
+  dbusers: 
+    njphone_wrdp1: 
+      dbs: 
+        njphone_wrdp1: 206.225.83.161
+      server: 206.225.83.161
+  noprefix: {}
+
+  owner: njphone
+  server: 206.225.83.161
+PGSQL: 
+  dbs: {}
+
+  dbusers: {}
+
+  noprefix: {}
+
+  owner: njphone
+  server: 206.225.83.161

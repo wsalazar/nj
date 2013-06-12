@@ -1,0 +1,13 @@
+[23-Apr-2013 21:53:03 America/Denver] PHP Fatal error:  Call to undefined function __() in /home7/njpcgeek/public_html/nj/wp-content/plugins/wp-e-commerce/wpsc-merchants/paypal-standard.merchant.php on line 12
+[24-Apr-2013 04:37:52 America/Denver] PHP Fatal error:  Call to undefined function __() in /home7/njpcgeek/public_html/nj/wp-content/plugins/wp-e-commerce/wpsc-merchants/paypal-pro.merchant.php on line 4
+[24-Apr-2013 12:50:41 America/Denver] PHP Fatal error:  Call to undefined function __() in /home7/njpcgeek/public_html/nj/wp-content/plugins/wp-e-commerce/wpsc-merchants/paypal-standard.merchant.php on line 12
+[24-Apr-2013 21:59:08 America/Denver] PHP Fatal error:  Call to undefined function __() in /home7/njpcgeek/public_html/nj/wp-content/plugins/wp-e-commerce/wpsc-merchants/paypal-pro.merchant.php on line 4
+[25-Apr-2013 07:25:48 America/Denver] PHP Fatal error:  Call to undefined function __() in /home7/njpcgeek/public_html/nj/wp-content/plugins/wp-e-commerce/wpsc-merchants/paypal-standard.merchant.php on line 12
+[26-Apr-2013 02:59:21 America/Denver] PHP Fatal error:  Call to undefined function __() in /home7/njpcgeek/public_html/nj/wp-content/plugins/wp-e-commerce/wpsc-merchants/paypal-pro.merchant.php on line 4
+[26-Apr-2013 03:57:21 America/Denver] PHP Fatal error:  Call to undefined function __() in /home7/njpcgeek/public_html/nj/wp-content/plugins/wp-e-commerce/wpsc-merchants/paypal-standard.merchant.php on line 12
+[27-Apr-2013 08:21:28 America/Denver] PHP Fatal error:  Call to undefined function __() in /home7/njpcgeek/public_html/nj/wp-content/plugins/wp-e-commerce/wpsc-merchants/paypal-pro.merchant.php on line 4
+[27-Apr-2013 08:21:55 America/Denver] PHP Fatal error:  Call to undefined function __() in /home7/njpcgeek/public_html/nj/wp-content/plugins/wp-e-commerce/wpsc-merchants/paypal-standard.merchant.php on line 12
+[29-Apr-2013 21:38:53 America/Denver] PHP Fatal error:  Call to undefined function __() in /home7/njpcgeek/public_html/nj/wp-content/plugins/wp-e-commerce/wpsc-merchants/paypal-standard.merchant.php on line 12
+[30-Apr-2013 22:34:42 America/Denver] PHP Fatal error:  Call to undefined function __() in /home7/njpcgeek/public_html/nj/wp-content/plugins/wp-e-commerce/wpsc-merchants/paypal-standard.merchant.php on line 12
+[01-May-2013 21:34:19 America/Denver] PHP Fatal error:  Call to undefined function __() in /home7/njpcgeek/public_html/nj/wp-content/plugins/wp-e-commerce/wpsc-merchants/paypal-standard.merchant.php on line 12
+[20-May-2013 10:25:40 America/Denver] PHP Fatal error:  Call to undefined function __() in /home7/njpcgeek/public_html/nj/wp-content/plugins/wp-e-commerce/wpsc-merchants/paypal-pro.merchant.php on line 4

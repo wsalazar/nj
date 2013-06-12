@@ -1,0 +1,30 @@
+# cPanel -- If you edit this file directly you must run /usr/local/cpanel/scripts/updateuserdomains afterwards to rebuild the system caches. 
+# If you edit MAX_EMAIL_PER_HOUR or MAX_EMAIL_PER_HOUR-[domain] you must run /usr/local/cpanel/scripts/updateuserdomains
+OWNER=root
+LANG=english
+MAXSQL=10
+MAXPOP=5
+FEATURELIST=default
+MAXADDON=1
+DNS=njphonefix.com
+MTIME=1365510473
+RS=x3
+MAXFTP=5
+MAXLST=5
+MAXPARK=3
+HASDKIM=0
+HASSPF=0
+STARTDATE=1330827819
+PLAN=Silver
+notify_email_quota_limit=
+DBOWNER=njphone
+notify_disk_limit=
+CONTACTEMAIL2=
+LOCALE=en
+CONTACTEMAIL=harrisdk@localwebstar.com
+DEMO=0
+USER=njphone
+IP=206.225.83.170
+HASCGI=1
+MAXSUB=5
+BWLIMIT=unlimited

@@ -1,0 +1,43 @@
+--- 
+customlog: 
+  - 
+    format: combined
+    target: /usr/local/apache/domlogs/njphonefix.com
+  - 
+    format: "\"%{%s}t %I .\\n%{%s}t %O .\""
+    target: /usr/local/apache/domlogs/njphonefix.com-bytes_log
+  - 
+    format: combined
+    target: /usr/local/apache/domlogs/njphonefix.com-ssl_log
+directoryhomenjphonepublichtmlcgibin: 
+  ssloptions: +StdEnvVars
+documentroot: /home/njphone/public_html
+group: njphone
+hascgi: 1
+homedir: /home/njphone
+ifmodulemodsuphpc: 
+  group: njphone
+ip: 206.225.83.170
+owner: root
+phpopenbasedirprotect: 1
+port: 443
+scriptalias: 
+  - 
+    path: /home/njphone/public_html/cgi-bin/
+    url: /cgi-bin/
+serveradmin: webmaster@njphonefix.com
+serveralias: www.njphonefix.com
+servername: njphonefix.com
+setenvif: 
+  - 
+    attribute: User-Agent
+    env_variables: nokeepalive ssl-unclean-shutdown
+    regex: "\".*MSIE.*\""
+ssl: 1
+sslcacertificatefile: /etc/ssl/certs/njphonefix.com.cabundle
+sslcertificatefile: /etc/ssl/certs/njphonefix.com.crt
+sslcertificatekeyfile: /etc/ssl/private/njphonefix.com.key
+sslengine: 'on'
+usecanonicalname: 'Off'
+user: njphone
+userdirprotect: ''

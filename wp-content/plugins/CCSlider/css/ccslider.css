@@ -1,0 +1,301 @@
+/* CSS for jQuery CCSlider Plugin 2.0.1
+ * Copyright 2011, Nilok Bose  
+ * http://codecanyon.net/user/cosmocoder
+*/
+
+
+/* Styles for slider div and images */
+
+.ccslider {
+	position: relative;
+	background: #fff url(../images/slider-loading.gif) center center no-repeat;
+	margin: 0 auto 20px auto;
+}
+
+.ccslider img {
+	visibility: hidden;
+}
+
+.slider-innerWrapper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.slider-innerWrapper img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	visibility: visible !important;
+	max-width: none !important;
+	min-width: 0 !important;
+	width: auto;
+}
+
+
+/* Styles for next/prev and play/pause buttons */
+
+.slider-controls {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 99;
+	display: none;
+}
+
+.ccslider:hover .slider-controls {
+	display: block;
+}
+
+a.slider-nav {
+	position: absolute;	
+	width: 35px;
+	height: 34px;
+	top: 50%;
+	margin-top: -17px;
+	cursor: pointer;	
+}
+
+.slider-nav.prev {	
+	background: url(../images/left-arrow.png) no-repeat;
+	left: -35px;
+}
+
+.slider-nav.next {	
+	background: url(../images/right-arrow.png) no-repeat;
+	right: -35px;
+}
+
+.slider-timer {	
+	position: absolute;	
+	left: 50%;	
+	top: 50%;
+	z-index: 200;
+	width: 50px;
+	height: 50px;		
+	margin-left: -25px;
+	margin-top: -25px;
+	cursor: pointer;
+	display: none;
+}
+
+.slider-timer.play {
+	background: url(../images/play.png) no-repeat;
+}
+
+.slider-timer.pause {
+	background: url(../images/pause.png) no-repeat;
+}
+
+.ccslider:hover .slider-timer {
+	display: block;
+}
+
+
+
+/* Styles for the control links */
+.control-links {
+    position: absolute;
+    z-index: 200;
+    list-style: none;
+    bottom: -20px;    
+    padding: 0;
+	margin: 0;
+	min-width: 100%;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.control-links li {
+    display: inline-block;
+    margin: 0 0 0 5px;
+    cursor: pointer;    
+    background: url(../images/link-bg.png) no-repeat;
+    width: 15px;
+    height: 15px;
+	text-indent: -99999px;
+	line-height: 0;
+	zoom: 1;
+	*float: left;	/* for IE6, IE7 */
+}
+
+.control-links li:first-child {
+	margin-left: 0;
+}
+
+.control-links li.active {
+    background: url(../images/link-active.png) no-repeat;
+}
+
+.control-links li.linkThumb {
+	width: auto;
+	height: auto;
+	position: relative;
+	top: 50px;
+	text-indent: 0;
+	background: transparent none;
+	-moz-transition: all 400ms ease;
+	-webkit-transition: all 400ms ease;
+	-o-transition: all 400ms ease;
+	-ms-transition: all 400ms ease;
+	transition: all 400ms ease;	
+}
+
+.control-links li.linkThumb.active {
+	background: transparent none;
+	-moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
+	-webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.control-links li.linkThumb img {
+	display: inline !important;
+	visibility: visible;
+}
+
+.ccslider.controlThumbs {
+	margin-bottom: 100px;
+}
+
+
+/* Caption styles */
+.cc-caption {
+	display: none;
+}
+
+.slider-caption {
+	background: #000;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 101;
+    color: #fff;
+    padding: 10px;
+    font-size: 14px;
+    position: absolute;
+    left: 0;
+	right: 0;
+    bottom: 0;	
+	display: none;
+}
+
+
+/* Containers for custom HTML content */
+.cc-htmlwrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 101;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	display: none;
+} 
+
+.cc-html {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+
+/* Styles for links placed on slide images */
+.slider-link {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	height: 100%;
+	background: url(about:blank);  /* hack to fix a bug in IE, to make the anchor tag clickable. Can use any fake image url */
+}
+
+
+/* Styles for elements used in 2d animations */
+.wipe-div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 3;
+	width: 0;
+	height: 0;
+}
+
+.split1-div, .split2-div {
+	position: absolute;
+	z-index: 4;
+}
+
+.circle-div {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 3;
+	width: 0;
+	height: 0;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.clock-mask {
+	position: absolute;
+	top: 0;
+	z-index: 3;
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.clock-mask.left {
+	left: 0;
+}
+
+.clock-mask.right {
+	right: 0;
+}
+
+.clock-outer {
+	position: absolute;
+	top: 50%;
+	overflow: hidden;
+}
+
+.left .clock-outer {
+	-moz-transform-origin: left center;
+	-webkit-transform-origin: left center;
+	-o-transform-origin: left center;
+	-ms-transform-origin: left center;
+	transform-origin: left center;
+}
+
+.right .clock-outer {
+	-moz-transform-origin: right center;
+	-webkit-transform-origin: right center;
+	-o-transform-origin: right center;
+	-ms-transform-origin: right center;
+	transform-origin: right center;
+}
+
+.clock-inner {
+	position: absolute;
+	top: 50%;
+}
+
+.left .clock-inner {
+	left: -50%;
+}
+
+.right .clock-inner {
+	left: 50%;
+}

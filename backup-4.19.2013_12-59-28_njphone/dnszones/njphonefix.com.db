@@ -1,0 +1,31 @@
+; cPanel first:11.30.6.3 (update_time):1363309824 Cpanel::ZoneFile::VERSION:1.3 hostname:loc.localwebstar.com latest:11.36.0.14
+; Zone file for njphonefix.com
+$TTL 14400
+njphonefix.com.	86400	IN	SOA	ns1.localwebstar.com.	luis.localwebstar.com.	(
+						2013031500 ;Serial Number
+						86400 ;refresh
+						7200 ;retry
+						3600000 ;expire
+						86400 ;minimum
+	)
+
+njphonefix.com.	86400	IN	NS	ns1.localwebstar.com.
+njphonefix.com.	86400	IN	NS	ns2.localwebstar.com.
+
+
+njphonefix.com.	14400	IN	A	206.225.83.170
+
+localhost	14400	IN	A	127.0.0.1
+
+njphonefix.com.	14400	IN	MX	0	njphonefix.com.
+
+mail	14400	IN	CNAME	njphonefix.com.
+www	14400	IN	CNAME	njphonefix.com.
+ftp	14400	IN	A	206.225.83.170
+cpanel	14400	IN	A	206.225.83.170
+whm	14400	IN	A	206.225.83.170
+webmail	14400	IN	A	206.225.83.170
+webdisk	14400	IN	A	206.225.83.170
+autoconfig IN A 206.225.83.170
+autodiscover IN A 206.225.83.170
+_autodiscover._tcp IN SRV 0 0 443 cpanelemaildiscovery.cpanel.net.

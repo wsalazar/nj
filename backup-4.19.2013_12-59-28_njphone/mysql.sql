@@ -1,0 +1,21 @@
+-- cPanel mysql backup
+GRANT USAGE ON *.* TO 'njphone'@'173.193.87.144' IDENTIFIED BY PASSWORD '1cba8ab277af444b';
+GRANT ALL PRIVILEGES ON `njphone\_wrdp1`.* TO 'njphone'@'173.193.87.144';
+GRANT USAGE ON *.* TO 'njphone_wrdp1'@'173.193.87.144' IDENTIFIED BY PASSWORD '177b6e000bf5e5a2';
+GRANT ALL PRIVILEGES ON `njphone\_wrdp1`.* TO 'njphone_wrdp1'@'173.193.87.144';
+GRANT USAGE ON *.* TO 'njphone'@'192.168.1.%' IDENTIFIED BY PASSWORD '1cba8ab277af444b';
+GRANT ALL PRIVILEGES ON `njphone\_wrdp1`.* TO 'njphone'@'192.168.1.%';
+GRANT USAGE ON *.* TO 'njphone_wrdp1'@'192.168.1.%' IDENTIFIED BY PASSWORD '177b6e000bf5e5a2';
+GRANT ALL PRIVILEGES ON `njphone\_wrdp1`.* TO 'njphone_wrdp1'@'192.168.1.%';
+GRANT USAGE ON *.* TO 'njphone'@'206.225.83.161' IDENTIFIED BY PASSWORD '1cba8ab277af444b';
+GRANT ALL PRIVILEGES ON `njphone\_wrdp1`.* TO 'njphone'@'206.225.83.161';
+GRANT USAGE ON *.* TO 'njphone_wrdp1'@'206.225.83.161' IDENTIFIED BY PASSWORD '177b6e000bf5e5a2';
+GRANT ALL PRIVILEGES ON `njphone\_wrdp1`.* TO 'njphone_wrdp1'@'206.225.83.161';
+GRANT USAGE ON *.* TO 'njphone'@'loc.localwebstar.com' IDENTIFIED BY PASSWORD '1cba8ab277af444b';
+GRANT ALL PRIVILEGES ON `njphone\_wrdp1`.* TO 'njphone'@'loc.localwebstar.com';
+GRANT USAGE ON *.* TO 'njphone_wrdp1'@'loc.localwebstar.com' IDENTIFIED BY PASSWORD '177b6e000bf5e5a2';
+GRANT ALL PRIVILEGES ON `njphone\_wrdp1`.* TO 'njphone_wrdp1'@'loc.localwebstar.com';
+GRANT USAGE ON *.* TO 'njphone'@'localhost' IDENTIFIED BY PASSWORD '1cba8ab277af444b';
+GRANT ALL PRIVILEGES ON `njphone\_wrdp1`.* TO 'njphone'@'localhost';
+GRANT USAGE ON *.* TO 'njphone_wrdp1'@'localhost' IDENTIFIED BY PASSWORD '177b6e000bf5e5a2';
+GRANT ALL PRIVILEGES ON `njphone\_wrdp1`.* TO 'njphone_wrdp1'@'localhost';

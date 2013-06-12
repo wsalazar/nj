@@ -1,0 +1,307 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>CCSlider Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+		h4 { font-weight: bold;}
+		pre { background: #f8f8f8; border: 1px solid #e1e1e1; padding: 20px; }
+	</style>	
+	
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;CCSlider WP&rdquo; Documentation by &ldquo;Nilok Bose&rdquo; v2.0.2</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;CCSlider WP&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 17/07/2011<br>
+					By: Nilok Bose<br>
+					Email: <a href="mailto:cosmocoder@gmail.com">cosmocoder@gmail.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my item. If you have any questions that are beyond the scope of this help
+				file, please feel free to email via my user page contact form <a href="http://codecanyon.net/user/cosmocoder">here</a>. Thanks so much!
+				</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#intro">Introduction</a></li>
+			<li><a href="#install">Installing the plugin</a></li>
+			<li><a href="#howto">How to Use</a></li>
+			<li><a href="#embed">Embed slideshows</a></li>
+		</ol>
+		
+		<hr>
+		
+		
+		
+		<h3 id="intro"><strong>A) Introduction</strong> - <a href="#toc">top</a></h3>
+		
+		<p>CCSlider WP makes it easy to embed the <a href="http://codecanyon.net/item/ccslider-jquery-3d-slideshow-plugin/162445">CCSlider jQuery slideshow 
+			plugin</a>, available at Codecanyon, in your Wordpress theme. CCSlider is unique from other jQuery based sliders because it provides 3d image 
+			effects. Overall there are 14 stunning 3d effects, and also 16 stylish 2d effects. CCSlider WP allows you to create multiple slideshows where each 
+			slideshow can have as many slides as you want. Although CCSlider WP allows you to create multiple slideshows you can only embed one slideshow per 
+			post/page.
+		</p>
+		
+		
+		<p>Please note that the 3d effects will only work on browsers that support HTML5 Canvas. Currently this includes Firefox 3.0+, Safari 3.0+, Chrome 3.0+, 
+		   Opera 9.5+ and IE 9+. Internet Explorer 6, 7 and 8 do not support Canvas. CCSlider allows you to set a 2d effect as a fallback effect for browsers 
+		   that don't support Canvas. Hence visitors to your web page using old browsers will still see a nice slideshow.
+		</p>
+		
+		
+		<hr>
+		
+		
+		<h3 id="install"><strong>B) Installing the plugin</strong> - <a href="#toc">top</a></h3>
+		
+		<p>To install the plugin follow the steps below: </p>
+		
+		<ol>
+			<li>Log in to the Wordpress admin panel.</li>
+			<li>Head over to Plugins section and click on the &ldquo;Add New&rdquo; button</li>
+			<li>Then click &ldquo;Upload&rdquo; to bring up the plugin upload dialog. Select the plugin file and upload it. Alternatively you could also 
+				unpack the plugin zip file in your computer and then upload it to <strong>/wp-content/plugins</strong> via FTP.</li>
+			<li>Next go to the Plugins main area and you will see <strong>CCSlider WP</strong> being listed as one of the available plugins.</li>
+			<li>Click the &ldquo;Activate&rdquo; button next to it and you are done.</li>
+		</ol>
+		
+		<p>Please note that when CCSlider WP is installed then it creates a folder called <strong>ccslider-upload</strong> in <strong>/wp-content</strong>. So 
+		   please ensure that this folder has correct permissions set. If you receive an error about the upload folder not being created then open 
+		   /wp-content folder via FTP and set its permission to 777.
+		</p>
+		
+		<p>If you are upgrading from an earlier version then first deactivate the plugin. Then upload the new plugin files into <strong>/wp-content/plugins</strong>
+		   and overwrite the old files and after that activate the plugin. All your previously created slideshows will remain intact. Some of the new options that have been
+		   introduced in the current version will have default values as required by the plugin. This will ensure that your previously created slideshows keep on working.
+		   However it is best recommended that you check all your slideshows and see if they are working as you want. You can also tweak the values of the new options in
+		   the Settings page to your liking for a particular slideshow. If by any chance you find that the fields for the new option parameters in the slideshow settings
+		   page are empty after updating the plugin, then deactivate the plugin, logout of WP Dashboard, login again and then activate the plugin. After that the new option
+		   parameters will have the default values in all your saved slideshows.
+		</p>
+		
+		
+		<hr>
+		
+		
+		
+		<h3 id="howto"><strong>C) How to Use</strong> - <a href="#toc">top</a></h3>
+		
+		<p>After activating the plugin you will see that a new menu item has been created on the left called <strong>CCSlider</strong>. This menu item has two 
+		   sub menus - <strong>Slideshow Manager</strong> and <strong>Create New Slideshow</strong>. These names are self explanatory and whenever you want to 
+		   create a new slideshow you will head over to the <strong>Create New Slideshow</strong> page, and all your existing slideshows will be listed in the 
+		   <strong>Slideshow Manager</strong> page, from where you can edit or delete slideshows.
+		</p>
+		
+		<p>So first of all to create a new slideshow head over to the appropriate page and you will be presented with a list of options. They are described 
+			below:
+		</p>
+		
+		<h4>Slideshow name</h4>
+		
+		<p>You must provide a name to the slideshow that you are going to create. This is a required field and you will receive an error if you leave it 
+			empty. Although different slideshows can have the same name but it is advisable that you provide unique names so that it is helpful for 
+			you to quickly differentiate between slideshows. 
+		</p>
+		
+		<hr>
+		
+		<h4>Slideshow description</h4>
+		
+		<p>You can write a description for the slideshow here. This field is optional.</p>
+		
+		<hr>
+		
+		<h4>Slide images, captions and links</h4>
+		
+		<p>Here you can upload images for use in the slider. Just click on the <strong>Upload a file</strong> button and a file dialog window will open. 
+			Select the image of your choice and upload it. In modern browsers you can also upload multiple images at a time. The image upload is handled through 
+			AJAX, and once the uploading is finished a list of boxes will appear where you can see a small version of the image uploaded and a textarea where you 
+			will be able to enter captions corresponding to that slide. As of version 2.0 a textbox is also presented where you can enter an url which will be used
+			to open an external page when clicking on the corresponding slide image. CCSlider handles HTML captions so you can enter html content in the textarea. 
+			You can also drag the boxes containing the images and textareas to sort the order of the slides. When you hover over a box you will see a delete button 
+			appear on the left, on clicking which will delete the entire slide. Note that on clicking the delete button the slide image is deleted immediately. So if
+			you reload the page after deleting a slide, without saving the settings first, then you will see a box with no image inside it.
+		</p>
+		
+		<hr>
+		
+		<h4>Type of effect</h4>
+		
+		<p>Here you have the option to choose whether you want a <strong>3d</strong> effect or a <strong>2d</strong> effect. Depending on your choice further 
+			options will appear. If you choose <strong>3d</strong> then a list of options for 3d effects will become visible, and if you choose 
+			<strong>2d</strong> then its corresponding options will appear.
+		</p>
+		
+		<hr>
+		
+		<h4>Options for 3d Slideshow</h4>
+		<p>A list of options that are applicable when you choose a 3d effect. Their functions are described as follows:</p>
+		<ul>
+			<li><strong>Effect Name</strong> - the name of the 3d effect that you want. Choose one from the available list.</li>
+			<li><strong>Image Width</strong> - the width of the rendered image. If your uploaded images are larger than this width then they will be automatically
+			cropped to this width. The original images are however retained and you can change this parameter value again if you want.</li>
+			<li><strong>Image Height</strong> - the height of the rendered image. Here also the uploaded images will be automatically cropped to this height and you can change this value anytime.</li>
+			<li><strong>Wrapper Width</strong> - the width of the slideshow wrapper. Since 3d effects require space for animating, the wrapper width should be greater than
+			the image width, by at least 100px, so that the 3d pieces don't get cut off while animating. You can check the slideshow preview and decide what width is actually needed.</li>
+			<li><strong>Wrapper Height</strong> - the height of the slideshow wrapper and should be greater than image height because of the previous reason.</li>
+			<li><strong>Inner Side Color</strong> - color of the inner side of the cube slices. Applicable only for "cube" 3d effects.</li>
+			<li><strong>Transparent images</strong> - enable this if your slide images are transparent png images.</li>
+			<li><strong>Enable Shadow</strong> - whether a shadow will be rendered or not. Applicable only for "cube" 3d effects.</li>
+			<li><strong>Shadow Color</strong> - if you want a shadow then you can mention its color. Standard css color values apply.</li>
+			<li><strong>Number of Slices</strong> - number of slices in which the image will be divided.</li>
+			<li><strong>Number of Rows</strong> - number of rows in which the image will be divided. Applicable only for "grid" 3d effects</li>
+			<li><strong>Number of Columns</strong> - number of columns in which the image will be divided. Applicable only for "grid" 3d effects</li>
+			<li><strong>Delay</strong> - delay between the animation of each slice. Value is in ms.</li>
+			<li><strong>Delay Direction</strong> - direction in which the delay will propagate. There are 4 available options.</li>
+			<li><strong>Depth Offset</strong> - offset along the z-axis when animating the 3d effect.</li>
+			<li><strong>Slice Gap</strong> - separation distance between the slices when animating the 3d effect.</li>
+			<li><strong>Easing</strong> - an easing option of your choice. Generally easing values of the type "InOut" look much better.</li>
+			<li><strong>FallBack</strong> - a 2d effect fallback for older browsers. Mention any effect from available list of 2d effects.</li>
+			<li><strong>FallBack Speed</strong> - The time for the animation to be complete in case a 2d effect is activated for an older browser.</li>
+		</ul>
+		
+		<h4>Options for 2d Slideshow</h4>
+		<p>A list of options that are applicable when you choose a 2d effect. Their functions are described as follows:</p>
+		<ul>
+			<li><strong>Effect Name</strong> - the name of the 2d effect that you want. Choose one from the available list.</li>
+			<li><strong>Slider Size</strong> - the width and height of the slider. The slide images will be automatically cropped to these dimensions.
+			The original images will be retained and you can change the slider size anytime you want. The default value is 600 &times; 300 px.</li>
+		</ul>
+		
+		<hr>
+		
+		<h4>General Options</h4>
+		
+		<p>A list of options is also presented that are applicable no matter what type of effect is chosen. Their functions are described below. </p>
+		
+		<ul>
+			<li><strong>Animation speed</strong> - the time interval over which a particular effect will animate. Value should be in ms.</li>
+			<li><strong>Start Slide</strong> - the slide number from which the slideshow will start. The numbering of slides is zero based, meaning that the first slide is 0, the second slide is 1 and so on.</li>
+			<li><strong>Next/Prev buttons</strong> - this option lets you enable next/prev buttons in the slider.</li>
+			<li><strong>Control Links</strong> - this option lets you enable control links to each slide, on clicking which a particular slide will come into view.</li>
+			<li><strong>Thumbnail Control Links</strong> - this option lets you have thumbnails of the slide images as control links.</li>
+			<li><strong>Thumbnail Size</strong> - if you chose to have thumbnails as control links then enter their dimensions here and the thumbnails will be automatically created. The default size is 100 &times; 50 px.</li>
+			<li><strong>Autoplay</strong> - you can choose to enable autoplay of the slides.</li>
+			<li><strong>Time interval for slides</strong> - here you can enter the length of time interval over which each slide will remain visible before the next slide appears.</li>
+			<li><strong>Pause on hover</strong> - you can choose to pause the slideshow when the user hovers his mouse cursor over the slideshow.</li>
+			<li><strong>Enable captions</strong> - you can choose to enable captions for your slideshow.</li>
+			<li><strong>Caption animation</strong> - if captions are enabled then you can choose an animated effect for the captions from the available list.</li>
+			<li><strong>Caption animation speed</strong> - the time period that the captions will take to animate.</li>
+		</ul>
+		
+		<hr>
+			
+		<h4>Custom Transitions for each slide</h4>
+		
+		<p>As of version 2.0 you have the option to mention a custom transition for each slide. If you choose to have custom transitions then based on the type of effect you have chosen (3d or 2d)
+		   you will be provided with a list of options for each slide whose functions have been explained above. This list for the custom transitions for each slide is updated dynamically when you sort
+		   the list of uploaded slide images or delete a slide image, so that the order of the slides is maintained. You can also disable custom transitions for a slideshow anytime you want.
+		</p>
+		
+		<hr>
+		
+		
+		<p>Whenever you want to create a new slideshow then the form on that page will be filled out with default option values, so that you don't have to fill 
+		   out every single form field in order to make your slideshow work. You can just change the settings that you want to customize and save the slideshow 
+		   settings. Needless to say, whenever you are going to edit an existing slideshow, the same page will open and all the form fields will be filled out 
+		   with the settings with which you created the slideshow. Also you can preview your slideshow, with the settings that you had just entered, before 
+		   saving it. The preview will also feature cropped slide images according to the dimensions you have specified, so that you can accurately visualize how your
+		   slideshow will look.
+		</p>
+	
+		
+		<p>As already mentioned above, you have to remember one important fact concerning the width and height of the slider wrapper if you choose a 3d effect. 
+		   The animations for 3d effects need some space, more than the width and height of the images. Whatever values you pass to the Image Width and
+		   Image Height plugin parameters described above, the width and height of the slider wrapper must be at least greater than that by about 100px. So for 
+		   example if you set Image Width to 600px and Image Height to 300px then the width and height of the slider wrapper should be about 700px and 400px 
+		   respectively.
+		</p>
+		
+		<p>If you do not set a higher width and height value then you will observe that while animating, parts of the images are being cut off. Therefore 
+		   do not forget this. You will have to tweak the width and height values of the slider wrapper for a given value of the Image Width and Image Height 
+		   parameters to find the optimal setting.
+		</p>
+		
+		<p>On the other hand if you choose a 2d effect then the plugin will automatically crop the images to the specified width and height of the slider. 
+		   If you choose a 3d effect and a visitor to your site uses an older browser like IE so that the fallback effect is activated, then the slide images will be
+		   cropped to have the dimensions set in the Image Width and Image Height parameters.
+		</p>
+		
+		<p>If you choose a 3d effect and the fallback 2d effect is activated in an older browser like IE8, then a class called <strong>fallback</strong> is applied
+		   on the slider container. Also if you choose thumbnails for the control links then a class called <strong>controlThumbs</strong> is applied on the slider
+		   container. You can use these class names to apply special styling through css for these two cases.
+		</p>	
+		
+		<p>Try not to set too large a width and height for the rendered images for the 3d effects, and don't set too many slices. The reason for this is that the 3d effects 
+		   require more CPU processing power than the ordinary 2d effects. So too large images or too many slices will overload the CPU and result in choppy
+		   animations. Although modern browsers have fast javascript engines and also most modern computers have quite good processing power, but not all users have
+		   the latest browsers and hardware configuration. So an animation that appears smooth to one user may appear slow/jerky to another.
+		</p>
+		
+	
+		<hr>
+		
+		
+		<h3 id="embed"><strong>D) Embed slideshows</strong> - <a href="#toc">top</a></h3>
+		
+		<p>All the slideshows that you create will be visible in the Slideshow Manager page. When you go to that page you will see that each slideshow has a 
+		   field in the table titled <strong>shortcode</strong>. In this field you will see the shortcode that is required for embedding a particular slideshow. 
+		   Just copy the shortcode for a slider, that is displayed there and then head over to Posts section in Wordpress. Open any post or page where you want 
+		   to have a slideshow, in the Wordpress editor, and then paste the shortcode at a place where you find suitable, and then save or publish that post or 
+		   page. Then open that post/page in your browser and you will see the slider in action with all the settings that you created it with. If you want to directly
+		   write the embed code in a Wordpress template file then you will have to use the <a href="http://codex.wordpress.org/Function_Reference/do_shortcode">do_shortcode</a>
+		   function. Using this function has the advantage that you can embed a slideshow in a part of the Wordpress template where content is not pulled using the Wordpress Loop.
+		   An example usage of this function to embed a slideshow is:
+		</p>
+		
+<pre>
+    &lt;?php echo do_shortcode('[ccslider id="1"]'); ?&gt;
+</pre>
+		
+		
+		<hr>
+		
+		
+		
+		
+		<p>I hope that you like this item and it makes your web page more stunning. If you find any bugs then don't hesitate to let me know. Also if you want to see some
+		   new features in this item or have any ideas to make the overall item much better then you can send me the details. All future updates are of course free !
+		</p>
+		
+		<p>Once again, thank you so much for purchasing this item. As I said at the beginning, I'd be glad to help you if you have any questions
+		relating to this item. No guarantees, but I'll do my best to assist. If you have a more general question relating to the items on Codecanyon,
+		you might consider visiting the forums and asking your question in the "Item Discussion" section.
+		</p> 
+		
+		<p class="append-bottom alt large"><strong>Nilok Bose</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>

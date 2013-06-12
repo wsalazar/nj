@@ -1,0 +1,223 @@
+h3 {
+    margin-top: 40px;
+}
+
+#formButtons {
+    margin: 40px 0;
+}
+
+#formButtons input {
+    margin-right: 20px;
+}
+
+#slidesList {
+    width: 540px;
+    margin: 40px 0;
+    min-height: 100px;    
+    position: relative;
+    list-style: none;
+}
+
+#slidesList li {
+    width: 540px;    
+    padding: 20px 20px 20px 60px;	
+    position: relative;
+    border: 1px solid #aaa;
+    margin-bottom: 10px;
+    cursor: move;
+    zoom: 1;
+    background-color: #ffffff;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ececec)); /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(top, #ffffff, #ececec); /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image:    -moz-linear-gradient(top, #ffffff, #ececec); /* FF3.6 */
+    background-image:     -ms-linear-gradient(top, #ffffff, #ececec); /* IE10 */
+    background-image:      -o-linear-gradient(top, #ffffff, #ececec); /* Opera 11.10+ */
+    background-image:         linear-gradient(top, #ffffff, #ececec);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#slidesList li:before, #slidesList li:after {
+    content:"";
+    display:table;
+}
+
+#slidesList li:after {
+    clear: both;
+}
+
+#slidesList img {
+    width: 200px;
+    height: 130px;
+    float: left;
+}
+
+#slidesList label {
+    width: 300px;
+    height: 20px;
+    font-weight: bold;
+    float: right;
+}
+
+#slidesList .caption {
+    font-size: 12px;    
+    color: #444;
+    width: 300px;
+    height: 50px;
+    clear: right;
+    float: right;
+    margin-bottom: 20px;
+}
+
+#slidesList .slideLink {
+    font-size: 12px;    
+    color: #444;
+    width: 300px;
+    height: 25px;
+    line-height: 25px;
+    clear: right;
+    float: right;
+}
+
+#slidesList .description {
+    clear: right;
+    float: right;
+    width: 300px;
+}
+
+#slidesList a.delete {
+    width: 28px;
+    height: 28px;
+    background: url(../images/delete.png);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    z-index: 2;
+    display: none;
+}
+
+#customSettings {
+    margin-top: 20px;
+    display: none;
+}
+
+#customSettings li {
+    width: 850px;
+    padding: 20px;
+    border: 1px solid #aaa;
+    margin-bottom: 10px;
+    position: relative;
+    zoom: 1;
+    background-color: #ffffff;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ececec)); /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(top, #ffffff, #ececec); /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image:    -moz-linear-gradient(top, #ffffff, #ececec); /* FF3.6 */
+    background-image:     -ms-linear-gradient(top, #ffffff, #ececec); /* IE10 */
+    background-image:      -o-linear-gradient(top, #ffffff, #ececec); /* Opera 11.10+ */
+    background-image:         linear-gradient(top, #ffffff, #ececec);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#customSettings li:before, #customSettings li:after {
+    content:"";
+    display:table;
+}
+
+#customSettings li:after {
+    clear: both;
+}
+
+#customSettings p {
+    float: left;
+    width: 130px;
+    margin: 0 20px 20px 0;
+}
+
+#customSettings p:nth-of-type(2) {
+    margin-left: 100px;
+}
+
+#customSettings p:nth-of-type(8) {
+    clear: both;
+    margin-left: 100px;
+}
+
+#customSettings p:nth-last-of-type(-n+5) {
+    margin-bottom: 0;
+}
+
+#customSettings .customEffects2d p:nth-of-type(3) {
+    margin-left: 100px;
+}
+
+#customSettings label, #customSettings input, #customSettings select {
+    width: 130px;
+}
+
+#customSettings .slideThumb {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    margin-top: -40px;
+}
+
+#customSettings .slideThumb img {
+    width: 100%;
+    height: 100%;
+    background: #ccc;
+}
+
+.customEffects2d p, .custom2d {
+    display: none;
+}
+
+.customEffects2d .slideThumb, .customEffects2d .custom2d, .customEffects2d .customAnimSpeed {
+    display: block;
+}
+
+#overlay {
+    position: absolute;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    background: #fff;
+    display: none;
+    -moz-box-shadow: 0 10px 50px rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: 0 10px 50px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.7);
+}
+
+#overlayContent {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+#overlay .ccslider {
+    margin: 40px auto;
+    background: #fff url(../images/slider-loading.gif) center center no-repeat;
+}
+
+#overlay img {
+	visibility: hidden;
+}
+
+#overlay .control-links img {
+	visibility: visible;
+}
+
+#overlay #close {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    background: url(../images/close.png);
+}
